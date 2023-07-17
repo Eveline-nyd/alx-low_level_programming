@@ -1,6 +1,5 @@
 #include <stdio.h>
-#include "4-sum.h"
-#include "4-sum.h"
+#include "dog.h"
 
 /**
  * main - check the code
@@ -9,9 +8,11 @@
  */
 int main(void)
 {
-    int s;
+    struct dog my_dog;
 
-    s = SUM(98, 1024);
-    printf("%d\n", s);
+    my_dog.name = "Poppy";
+    my_dog.age = 3.5;
+    my_dog.owner = "Bob";
+    printf("My name is %s, and I am %.1f :) - Woof!\n", my_dog.name, my_dog.age);
     return (0);
 }
